@@ -1,0 +1,146 @@
+/* Add Income / Expense */
+
+.Main {
+  background: #000;
+  min-height: 100vh;
+  color: white;
+  padding: 20px;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Header */
+
+.header {
+  margin-bottom: 30px;
+}
+
+.header h2 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+/* Form */
+
+.formWrapper {
+  background: #111;
+
+  border: 1px solid #222;
+
+  border-radius: 16px;
+
+  padding: 25px;
+
+  transition: .3s;
+}
+
+.formWrapper:hover {
+  border-color: white;
+}
+
+.FormElement {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 22px;
+}
+
+/* Input Section */
+
+.sectionInput {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+.sectionInput label {
+  color: #888;
+
+  font-size: 14px;
+
+  letter-spacing: 1px;
+
+  text-transform: uppercase;
+}
+
+/* Inputs */
+
+.sectionInput input {
+  background: #181818;
+
+  border: 1px solid #222;
+
+  border-radius: 12px;
+
+  color: white;
+
+  padding: 18px;
+
+  font-size: 16px;
+
+  outline: none;
+
+  transition: .3s;
+}
+
+.sectionInput input:focus {
+  border-color: white;
+
+  background: #121212;
+}
+
+.sectionInput input::placeholder {
+  color: #555;
+}
+
+/* Button */
+
+.Add {
+  width: 100%;
+
+  margin-top: 35px;
+
+  background: white;
+
+  color: black;
+
+  border: none;
+
+  border-radius: 12px;
+
+  padding: 18px;
+
+  font-size: 18px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: .3s;
+}
+
+.Add:hover {
+  background: #dcdcdc;
+
+  transform: translateY(-2px);
+}
+
+.Add:active {
+  transform: scale(.98);
+}
+
+/* Mobile */
+
+@media (max-width:768px) {
+
+  .header h2 {
+    font-size: 24px;
+  }
+
+  .sectionInput input {
+    padding: 15px;
+  }
+
+}

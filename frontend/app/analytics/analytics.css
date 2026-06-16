@@ -1,0 +1,166 @@
+/* Analytics Page */
+
+.Main {
+  background: #000;
+  min-height: 100vh;
+  color: white;
+  padding: 20px;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Expense Card */
+
+.monthlyexpeneswrapper {
+  background: #111;
+  border: 1px solid #222;
+
+  border-radius: 16px;
+
+  padding: 25px;
+
+  transition: .3s ease;
+}
+
+.monthlyexpeneswrapper:hover {
+  border-color: white;
+}
+
+/* Filters */
+
+.filterwrapper {
+  display: flex;
+
+  justify-content: space-between;
+
+  margin-bottom: 40px;
+
+  gap: 10px;
+}
+
+.filter {
+  flex: 1;
+
+  background: #181818;
+
+  padding: 14px;
+
+  border-radius: 10px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  border: 1px solid #222;
+}
+
+.filter span {
+  font-size: 14px;
+}
+
+.filter input {
+  width: 18px;
+  height: 18px;
+
+  accent-color: white;
+
+  cursor: pointer;
+}
+
+/* Amount Section */
+
+.ContentWrapper {
+  text-align: center;
+}
+
+.ContentWrapper h3 {
+  font-size: 14px;
+
+  color: #888;
+
+  margin-bottom: 10px;
+
+  letter-spacing: 1px;
+
+  text-transform: uppercase;
+}
+
+#Amout {
+  font-size: 52px;
+
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+/* Graph */
+
+.garph {
+  margin-top: 30px;
+  background: #111;
+  border: 1px solid #222;
+  height: 280px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 15px;
+  box-sizing: border-box;
+  transition: .3s ease;
+}
+
+.garph:hover {
+  border-color: white;
+}
+
+/* Delete */
+
+.Deletdata {
+  margin-top: 30px;
+}
+
+.delet {
+  width: 100%;
+
+  background: transparent;
+
+  border: 1px solid #ff4040;
+
+  color: #ff4040;
+
+  padding: 18px;
+
+  border-radius: 12px;
+
+  font-size: 16px;
+
+  cursor: pointer;
+
+  transition: .3s;
+}
+
+.delet:hover {
+  background: #ff4040;
+
+  color: white;
+}
+
+/* Mobile */
+
+@media (max-width:768px) {
+
+  .filterwrapper {
+    flex-direction: column;
+  }
+
+  #Amout {
+    font-size: 40px;
+  }
+
+  .garph {
+    height: 220px;
+  }
+
+}

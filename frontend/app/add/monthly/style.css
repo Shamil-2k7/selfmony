@@ -1,0 +1,242 @@
+/* Monthly Page */
+
+.Main {
+  background: black;
+  min-height: 100vh;
+  color: white;
+  padding: 20px;
+  font-family: "Inter", sans-serif;
+}
+
+/* Header */
+
+.header {
+  margin-bottom: 25px;
+}
+
+.header h3 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+/* Current Summary */
+
+.current {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 12px;
+
+  margin-bottom: 30px;
+}
+
+.setion {
+  background: #111;
+
+  border: 1px solid #222;
+
+  border-radius: 12px;
+
+  padding: 20px;
+
+  transition: .3s;
+}
+
+.setion:hover {
+  border-color: white;
+}
+
+.anoutname {
+  font-weight: 600;
+}
+
+/* Form */
+
+.formWrapper {
+  background: #111;
+
+  border: 1px solid #222;
+
+  border-radius: 16px;
+
+  padding: 25px;
+
+  margin-bottom: 40px;
+}
+
+.FormElement {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 20px;
+}
+
+.sectionInput {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+.sectionInput label {
+  color: #888;
+
+  font-size: 14px;
+}
+
+.sectionInput input {
+  background: #181818;
+
+  color: white;
+
+  border: 1px solid #222;
+
+  padding: 16px;
+
+  border-radius: 10px;
+
+  outline: none;
+
+  transition: .3s;
+}
+
+.sectionInput input:focus {
+  border-color: white;
+}
+
+/* Add */
+
+.Add {
+  margin-top: 25px;
+
+  width: 100%;
+
+  padding: 18px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  background: white;
+
+  color: black;
+
+  font-size: 18px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: .3s;
+}
+
+.Add:hover {
+  transform: translateY(-2px);
+}
+
+/* List */
+
+.listofmonltyexpenses {
+  margin-top: 20px;
+}
+
+.listofmonltyexpenses h1 {
+  margin-bottom: 20px;
+
+  font-size: 24px;
+}
+
+.listwrapper {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 14px;
+}
+
+.boxlist {
+  background: #111;
+
+  border: 1px solid #222;
+
+  border-radius: 14px;
+
+  padding: 18px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  transition: .3s;
+}
+
+.boxlist:hover {
+  border-color: white;
+}
+
+.texts {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+.name {
+  font-size: 18px;
+}
+
+.aomut {
+  color: #999;
+}
+
+.remove {
+  background: transparent;
+
+  color: #ff4444;
+
+  border: 1px solid #ff4444;
+
+  padding: 10px 18px;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  transition: .3s;
+}
+
+.remove:hover {
+  background: #ff4444;
+
+  color: white;
+}
+
+/* Mobile */
+
+@media (max-width:768px) {
+
+  .setion {
+    flex-direction: column;
+
+    gap: 8px;
+  }
+
+  .boxlist {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 15px;
+  }
+
+  .remove {
+    width: 100%;
+  }
+
+}

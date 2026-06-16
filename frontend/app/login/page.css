@@ -1,0 +1,132 @@
+.authContainer {
+  background: #000;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 20px;
+  font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
+}
+
+.authCard {
+  background: #111;
+  border: 1px solid #222;
+  border-radius: 16px;
+  padding: 40px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.authCard:hover {
+  border-color: #444;
+}
+
+.authHeader {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.authHeader h1 {
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.authHeader p {
+  color: #888;
+  font-size: 14px;
+}
+
+.authForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.errorMessage {
+  background: rgba(255, 64, 64, 0.1);
+  border: 1px solid #ff4040;
+  color: #ff4040;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.formGroup label {
+  color: #aaa;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.formGroup input {
+  background: #181818;
+  color: white;
+  border: 1px solid #222;
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.formGroup input:focus {
+  border-color: white;
+}
+
+.authBtn {
+  background: white;
+  color: black;
+  border: none;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.authBtn:hover {
+  background: #eee;
+  transform: translateY(-1px);
+}
+
+.authBtn:disabled {
+  background: #555;
+  color: #888;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.authToggle {
+  margin-top: 25px;
+  text-align: center;
+  font-size: 14px;
+  color: #888;
+}
+
+.authToggle span {
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.authToggle span:hover {
+  color: #ccc;
+}

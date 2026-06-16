@@ -1,0 +1,123 @@
+/* Add Page */
+
+.Main {
+  background: #000;
+  min-height: 100vh;
+  color: white;
+  padding: 20px;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Top Buttons */
+.addbtnContner {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.addbtnContner .addwrapper {
+  flex: 1;
+}
+
+/* Shared Card Style */
+.addwrapper {
+  background: #111111;
+  border: 1px solid #222;
+  border-radius: 14px;
+
+  padding: 22px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.addwrapper:hover {
+  border-color: white;
+  transform: translateY(-3px);
+}
+
+.heading {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* Icons */
+.addwrapper svg {
+  font-size: 26px;
+}
+
+/* Expense */
+.addbtnContner .addwrapper:first-child {
+  background: white;
+  color: black;
+}
+
+/* Income */
+.addbtnContner .addwrapper:last-child {
+  background: #111;
+  color: white;
+}
+
+/* Monthly */
+.monthlybtnContner {
+  margin-top: 30px;
+}
+
+.monthlybtnContner .addwrapper {
+  justify-content: flex-start;
+  gap: 15px;
+
+  padding: 28px;
+
+  font-size: 18px;
+}
+
+/* Weekly */
+.weeklybtnContner {
+  margin-top: 15px;
+}
+
+.weeklybtnContner .addwrapper {
+  justify-content: flex-start;
+  gap: 15px;
+
+  padding: 28px;
+
+  font-size: 18px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .addbtnContner {
+    flex-direction: column;
+  }
+
+  .addwrapper {
+    padding: 18px;
+  }
+
+  .heading,
+  .monthlybtnContner h3,
+  .weeklybtnContner h3 {
+    font-size: 16px;
+  }
+}
+.todo{
+background: #111111;
+  border: 1px solid #222;
+  border-radius: 14px;
+
+  padding: 22px;
+
+  display: flex;
+  align-items: center;
+  justify-content:center;
+
+  transition: 0.3s ease;
+  cursor: pointer;
+    
+}
