@@ -105,6 +105,11 @@ const User = mongoose.model('User', UserSchema);
 const Transaction = mongoose.model('Transaction', TransactionSchema);
 const Todo = mongoose.model('Todo', TodoSchema);
 
+// Sync indexes to automatically drop obsolete/legacy indexes (like email_1)
+User.syncIndexes()
+  .then(() => console.log('User indexes synced successfully.'))
+  .catch((err) => console.error('Error syncing User indexes:', err));
+
 const JWT_SECRET = process.env.JWT_SECRET || 'selfmony_secret_key_123_abc';
 
 // --- Auth Routes ---
